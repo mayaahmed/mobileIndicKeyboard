@@ -63,6 +63,7 @@ padding: 10px;
 
 
 #letterDiv{
+position: relative;
 margin-top: 50px;
 min-height: 100px;
 width: 75%;
