@@ -4,8 +4,8 @@ background: black;
 
 .main_panel{
 
-width:100%;
-max-width: 300px;
+width:75%;
+
 padding: 5px; 
 
 
@@ -63,6 +63,7 @@ padding: 10px;
 
 
 #letterDiv{
+margin-top: 20px;
 min-height: 100px;
 width: 75%;
 max-width: 575px;
