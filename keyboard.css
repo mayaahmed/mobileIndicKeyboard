@@ -1,0 +1,77 @@
+body{
+background: black;
+}
+
+.main_panel{
+
+width:100%;
+max-width: 300px;
+padding: 5px; 
+
+
+}
+
+
+.number_button
+{
+
+width:22px;
+height:22px;
+margin:2px;
+background-color: khaki;
+border-radius: 2px;
+font-size: 18px;
+text-align:center;
+opacity: 0.8;
+line-height: 22px;
+box-shadow: inset 1px 1px 1px black;
+float: left;
+}
+
+
+.number_button:hover
+{
+opacity: 1;
+height: 23px;
+width: 23px;
+}
+
+
+
+#spacebar{
+
+width: 100px;
+margin-left: 50px;
+
+}
+
+#enter{
+ width: 50px;
+font-size: 18px;
+
+}
+
+
+
+textarea{
+background:#FFFFCC;
+font-size: 24px;
+opacity: 0.8;
+box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
+padding: 10px;
+}
+
+
+#letterDiv{
+min-height: 100px;
+width: 75%;
+max-width: 575px;
+background:#FFFFCC;
+font-size: 24px;
+opacity: 0.8;
+box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
+padding: 10px;
+z-index: -1;
+}
+
+
