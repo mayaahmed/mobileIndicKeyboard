@@ -8,6 +8,7 @@ nav > ul {
   display: inline-block;
  // background: black;
   border-radius: 5px;
+
   opacity: 0.8;
   float: right;
 // margin-right: 100px;
@@ -19,7 +20,7 @@ nav > ul > li {
   height: 35px;
   line-height: 35px;
   position: relative;
- 	font-size: 22px;
+ 
   color: khaki;
   cursor: pointer;
 
@@ -34,9 +35,16 @@ nav > ul > li:hover {
 nav > ul >  li a{
 text-decoration: none;
  color:  khaki;
-	font:  16px Tahoma; 
+	font:  20px Tahoma; 
     padding:10px;
+opacity: 0.8;
 }
+
+nav > ul >  li a:hover{
+	font:  21px Tahoma; 
+    opacity: 1;
+}
+
 
 ul.drop-menu {
   position: absolute;

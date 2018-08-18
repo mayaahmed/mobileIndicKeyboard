@@ -5,6 +5,9 @@ var letter =  document.getElementById("letterDiv");
 function alphabet_write(x)
 {
   string=string+x;
+console.log(string);
+  string = decodeURIComponent(string);
+console.log(string);
   letter.innerHTML = string;
   }
 
