@@ -20,14 +20,10 @@ li:hover{
 
 
 
-#container{
-margin: 0 auto;
-// display: flex;
-
-}
 
 
 #listDiv{
+
 padding: 20px;
 background: black;
 width: 200px;
@@ -102,3 +98,19 @@ height: 22px;
 width: 22px;
 }
 
+#the_footer{
+margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border-top: 2px solid khaki;
+   color: khaki;
+    
+    opacity: 0.8;
+}
+
+
+#the_footer:hover{
+    font-size: 14px;
+ opacity: 1;
+}
