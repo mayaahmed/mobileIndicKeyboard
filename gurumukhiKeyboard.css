@@ -5,7 +5,7 @@ background: black;
 .main_panel{
 
 width:100%;
-max-width: 600px;
+max-width: 625px;
 display: -webkit-flex; 
 display: flex;
 padding: 5px; 
@@ -18,15 +18,15 @@ flex-wrap: wrap;
 .number_button
 {
 
-width:30px;
-height:30px;
+width:25px;
+height:25px;
 margin:2px;
 background-color: khaki;
 border-radius: 2px;
 font-size: 22px;
 text-align:center;
 opacity: 0.8;
-line-height: 30px;
+line-height: 25px;
 box-shadow: inset 1px 1px 1px black;
 }
 
@@ -34,8 +34,8 @@ box-shadow: inset 1px 1px 1px black;
 .number_button:hover
 {
 opacity: 1;
-height: 31px;
-width: 31px;
+height: 26px;
+width: 26px;
 }
 
 
@@ -65,7 +65,7 @@ padding: 10px;
 #letterDiv{
 min-height: 200px;
 width: 100%;
-max-width: 575px;
+max-width: 610px;
 background:#FFFFCC;
 font-size: 24px;
 opacity: 0.8;

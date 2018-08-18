@@ -4,23 +4,29 @@ background: black;
 
 .main_panel{
 
-width: 75%;
+width:100%;
+max-width: 625px;
+display: -webkit-flex; 
+display: flex;
 padding: 5px; 
+// border: 1px solid red;
+flex-wrap: wrap;
+// justify-content: center;
 }
 
 
 .number_button
 {
-float: left;
-width:25px;
-height:25px;
+
+width:40px;
+height:40px;
 margin:2px;
 background-color: khaki;
 border-radius: 2px;
-font-size: 14px;
+font-size: 18px;
 text-align:center;
 opacity: 0.8;
-line-height: 25px;
+line-height: 40px;
 box-shadow: inset 1px 1px 1px black;
 }
 
@@ -28,21 +34,21 @@ box-shadow: inset 1px 1px 1px black;
 .number_button:hover
 {
 opacity: 1;
-height: 26px;
-width: 26px;
+height: 41px;
+width: 41px;
 }
 
 
 
 #spacebar{
-
-width: 125px;
+clear:both; 
+width: 250px;
 margin-left: 50px;
 }
 
 #enter{
 width: 50px;
-font-size: 14px;
+font-size: 18px;
 }
 
 
@@ -57,10 +63,8 @@ padding: 10px;
 
 
 #letterDiv{
-position: relative;
-margin-top: 50px;
-min-height: 150px;
-width: 75%;
+min-height: 200px;
+width: 100%;
 max-width: 610px;
 background:#FFFFCC;
 font-size: 24px;

@@ -10,51 +10,55 @@
 -->
 
 	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	//	<meta charset="UTF-8" />
 		<title>Punjiri: Web and Mobile Technologies.</title>
         
         <script src="general.js"></script>
 		<link rel="stylesheet" type="text/css" href="general.css">
 	    <link rel="stylesheet" type="text/css" href="keyboard.css">
+        <link rel="stylesheet" type="text/css" href="dropdown.css">
 	</head>
 
 	<body>
-		<div id="big_wrapper">
-          <div id="topStuff">
-            <header id="top_header">
+	
+	<div id="big_wrapper">
+          
 
+      <div id="topStuff">
+            <header id="top_header">
                 <p>Keyboard</p>
                 <p id="flag"> Hindi </p>  
 			</header>
-			<nav id="top_menu">
+
+            <nav>
 			 <ul>
-               <li>
-                 <div class="dropdown">
-                   <button onclick="myFunction()" class="dropbtn">Language</button>
-                   <div id="myDropdown" class="dropdown-content">
-                     <p>  <a href="index.html"> Hindi </a> </p>
-                     <p>  <a href="devanagariIndex.html">Devanagari </a> </p> 
-                     <p>  <a href="malayalamIndex.html">Malayalam </a> </p> 
-                    
-                   </div>
-                 </div>
-               </li>
 
 
-               <li>
-                 <div id="myNav" class="overlay">
-                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
-                   <div class="overlay-content">
-                     <p> &copy; Punjiri Web and Mobile Technologies, 2016. </p>
-                     <p> Email: maya.ahmed@gmail.com</p>
-                   </div>
-                 </div>
-                 <span style="font-size:30px; cursor:pointer" onclick="openNav()"> &equiv;</span>
+
+
+
+                   <li> Language
+                 <ul class="drop-menu menu-1">
+                   <li>  <a href="devanagariIndex.html">Devanagari </a> </li> 
+                   <li>  <a href="gujaratiIndex.html">Gujarati </a> </li>
+                   <li>  <a href="gurumukhiIndex.html"> Gurumukhi</a> </li> 
+                   <li>  <a href="index.html"> Hindi </a> </li>  
+                   <li>  <a href="kannadaIndex.html"> Kannada </a> </li>
+                   <li>  <a href="malayalamIndex.html">Malayalam </a> </li>
+                   <li>  <a href="tamilIndex.html"> Tamil </a> </li>
+                   <li>  <a href="teluguIndex.html"> Telugu</a> </li>
+                   </ul>
                </li>
+        
+ 
              </ul>
-			</nav>
-          </div>
+	        </nav>
+
+
+      
+</div>
+          
      
 
 <div id="letterDiv" >
@@ -160,7 +164,7 @@
 
 
 
- 
+  <script src="dropdown.js"></script> 
  <script src="keyboard.js"></script> 
 
       
