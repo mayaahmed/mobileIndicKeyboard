@@ -42,9 +42,9 @@
 
       <div id="writingToolsDiv">
 	
-	<canvas id="letterCanvas" width="200" height="100"></canvas>
+	<canvas id="letterCanvas" width="200" height="200"></canvas>
 	<form id="letterText">
-	  <textarea rows="2" cols="50" id="messageTextArea" class="input" >Enter Text </textarea>
+	  <div  id="letterDiv" >Enter Text </div>
 	  <br/>
 	  <br/>
 	  <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToCanvas()" /> 
@@ -132,7 +132,7 @@
 	  <div class="number_button"  onclick="alphabet_write('&#2361;');">&#2361; </div>
 	  <div class="number_button"  onclick="alphabet_write('&#2384;');">&#2384;</div>
 	  <div class="number_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
-	  <div class="number_button" id="enter"  onclick="alphabet_write('\n');">Enter</div> 
+	  <div class="number_button" id="enter"  onclick="alphabet_write('<br/>');">Enter</div> 
 	</div>
 
 
