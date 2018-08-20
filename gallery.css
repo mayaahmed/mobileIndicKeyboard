@@ -6,11 +6,6 @@ max-height: 100%;
 }
 
 
-
-
-
-
-
 #galleryContainer{
 width: 90%;
  border: 1px solid khaki;
@@ -46,4 +41,15 @@ color: khaki;
 
 #imageDiv{
 color: khaki;
+}
+
+.fileInput{
+margin: 5px;
+padding: 2px;
+
+}
+
+.fileInput:hover{
+opacity: 0.8;
+
 }

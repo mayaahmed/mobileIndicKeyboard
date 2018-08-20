@@ -44,14 +44,9 @@
       
       <div id="toolsDiv">
 	<div id="galleryContainer"> </div>
-
-	
 	<div id="writingToolsDiv" class="light">
-	  
 	  <form id="letterText">
 	    <div  id="letterDiv" >Enter Text </div>
-	  
-	  
 	    <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToMainCanvas()" /> 
 	    <input type="button"  class="submitButton" id="languageButton" value ="Language" onclick="location.href='menu.html'" /> 
 	    
@@ -142,30 +137,26 @@
 	
 	<div class="light" id="imageDiv">
 	  <h3> File upload: </h3>
-	  <input type="file" id= "inputFileToLoad" > 
+	  <input class="fileInput" type="file" id= "inputFileToLoad" > 
 
-	  <p>  <input type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
+	  <p>  <input class="fileInput"type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
 	  <h3> Folder upload: </h3>
 	  
-	  <p> <input name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
+	  <p> <input class="fileInput" name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
             <!--    <label for="pripona">Filter file by file extension: </label>-->
             <select id="pripona">
 	      <option value="jpg">jpg</option>
               <option value="png">png</option>
             </select>
-            <input type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
+            <input class="fileInput" type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
 	</form> 
-
-
-
 	</div>
-
 
       </div>
 
       <footer id="the_footer">
-	&copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
-      </footer>    
+	  &copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
+	</footer> 
     </div> <! end of big wrapper-->
 	      
 	      
