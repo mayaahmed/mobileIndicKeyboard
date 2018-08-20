@@ -1,11 +1,8 @@
 
 var string = ""
 var letter =  document.getElementById("letterDiv");
-var canvas =  document.getElementById("letterCanvas");
-var toolsDiv = document.getElementById("writingToolsDiv");
+var display =  document.getElementById("galleryContainer");
 
-var save =document.getElementById('saveButton');
-save.addEventListener('click',saveCanvas);
 
 function alphabet_write(x)
 {
@@ -46,33 +43,19 @@ function number_write(x)
 
 
 
-var context = canvas.getContext("2d");
-context.fillStyle = "#000";
-context.font = "bold 16px Arial";
 
+function writeToMainCanvas(){
 
-function writeToCanvas(){
-    console.log(letter.innerHTML);
-    var x = 30;
-    var y = 30;
-    var lineheight = 30;
-
- //   var lines = letter.innerHTML.split('\n');
     var lines = letter.innerHTML.split('<br>');
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i<lines.length; i++)
-	context.fillText(lines[i], x, y + (i*lineheight) );
-    // context.fillText(letter.innerHTML, 10, 20);
-canvas.style.visibility ="visible";
-toolsDiv.style.visibility="hidden"
-
+    
+    for (var i = 0; i<lines.length; i++){
+	linebreak = document.createElement("br");
+	display.appendChild(linebreak);
+	display.append(lines[i]);
+    }
 }
 
 
-function saveCanvas(){
-    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  
-    window.location.href=image; // it will save locally
-}
 
 function deleteInputText(){
 letter.innerHTML='';

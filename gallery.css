@@ -1,0 +1,49 @@
+
+
+image{
+width: 50px;
+height: 200px;
+}
+
+
+
+
+
+
+
+#galleryContainer{
+width: 80%;
+ border: 1px solid khaki;
+-webkit-box-flex: 1;   margin-top: 20px;
+overflow: hidden;
+color: khaki;
+font-size: 22px;
+padding: 10px; 
+opacity: 0.7;
+margin: 10px;
+display: block;
+
+}
+
+#slideShowContainer{
+margin-top: 30px;
+width:100%
+min-height:200px;
+overflow: hidden;
+}
+
+
+
+img{
+width: 200px;
+height: 200px;
+}
+
+
+.labelType{
+color: khaki;
+}
+
+#imageDiv{
+color: khaki;
+}

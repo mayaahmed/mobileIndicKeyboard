@@ -17,12 +17,13 @@
     <script src="general.js"></script>
     
     <link rel="stylesheet" type="text/css" href="keyboard.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
     <link rel="stylesheet" type="text/css" href="dropdown.css">
   </head>
 
   <body>
 
-   
+    
     <div id="big_wrapper">
       
 
@@ -34,126 +35,150 @@
 
         <nav>
 	  <ul>
-	    <li>  <a href="menu.html" > Language</a> </li>
-	    <li><a href="#" id="clearCanvas"  onClick="location.href='index.html'"> New </a> </li>
-	    <li> <a  href="#"   id="saveButton" >   Save </a> </li>
+	    <li><a href="#" id="imageButton"  > Image </a> </li>
+	    <li><a href="#" id="textButton"  > Text </a> </li>
+	    <li><a href="#" id="clearCanvas"  onClick="location.href='index.html'"> New </a> </li>	  
 	</ul> </nav>
       </div>
+
+      
+      <div id="toolsDiv">
+	<div id="galleryContainer"> </div>
+
 	
+	<div id="writingToolsDiv" class="light">
+	  
+	  <form id="letterText">
+	    <div  id="letterDiv" >Enter Text </div>
+	    <br/>
+	    <br/>
+	    <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToMainCanvas()" /> 
+	    <input type="button"  class="submitButton" id="deleteMessageButton" value ="Delete" onclick="deleteInputText()" /> 
+	    <input type="button"  class="submitButton" id="languageButton" value ="Language" onclick="location.href='menu.html'" /> 
+	    
 
 
- <canvas id="letterCanvas"></canvas>
+	    <div class="main_panel">
+	      <!-- numerals -->
+	      <div class="number_button" onclick="keyboard_c()">&#8592;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2406;');">&#2406; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2407;');">&#2407;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2408;');"> &#2408;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2409;');">&#2409; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2410;');"> &#2410;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2411;');"> &#2411;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2412;');">&#2412; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2413;');">&#2413; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2414');">&#2414;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2415;');">&#2415;</div>
 
-      <div id="writingToolsDiv">
+
+
+	      <!-- Additions -->
+	      <div class="number_button"  id="aaa" onclick="alphabet_write('&#2381;');"> &#2381;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2366;');">&#2366;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2368;');"> &#2368;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2367;');">&#2367;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2369;');">&#2369; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2370;');">&#2370; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2375;');">&#2375; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2376;');">&#2376; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2379;');">&#2379; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2380;');">&#2380; </div>
+	      <div class="number_button"   onclick="alphabet_write('&#2306;');">&#2306; </div>
+	      <div class="number_button" onclick="alphabet_write('&#2307');">&#2307;</div>
+
+	      <!-- Akshar -->
+	      <div class="number_button"  id="aaa" onclick="alphabet_write('&#2309');">&#2309;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2311;');">&#2311;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2312;');"> &#2312;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2313;');">&#2313; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2314;');"> &#2314;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2319;');">&#2319;</div>
+	      <div class="number_button"   onclick="alphabet_write('&#2325;');">&#2325; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2326;');">&#2326; </div>
+	      <div class="number_button" onclick="alphabet_write('&#2327');">&#2327;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2328;');">&#2328;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2330;');"> &#2330;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2331;');">&#2331; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2332;');"> &#2332;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2333;');"> &#2333;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2334;');">&#2334; </div>
+
+
+	      <div class="number_button" id="aaa"   onclick="alphabet_write('&#2335;');">&#2335; </div>
+	      <div class="number_button"   onclick="alphabet_write('&#2336;');">&#2336; </div>
+	      <div class="number_button" onclick="alphabet_write('&#2337');">&#2337;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2338;');">&#2338;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2339;');">&#2339;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2340;');"> &#2340;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2341;');">&#2341; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2342;');"> &#2342;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2343;');"> &#2343;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2344;');">&#2344; </div>
+
+	      <div class="number_button"   onclick="alphabet_write('&#2346;');">&#2346; </div>
+	      <div class="number_button" onclick="alphabet_write('&#2347');">&#2347;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2348;');">&#2348;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2349;');">&#2349;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2350;');"> &#2350;</div>
+
+	      <div class="number_button" id="aaa"   onclick="alphabet_write('&#2351;');">&#2351; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2352;');"> &#2352;</div>
+
+	      <div class="number_button"  onclick="alphabet_write('&#2354;');">&#2354; </div>
+	      <div class="number_button"   onclick="alphabet_write('&#2355;');">&#2355; </div>
+
+	      <div class="number_button" onclick="alphabet_write('&#2357');">&#2357;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2358;');">&#2358;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2369;');">&#2359;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2360;');"> &#2360;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2361;');">&#2361; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2384;');">&#2384;</div>
+	      <div class="number_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
+	      <div class="number_button" id="enter"  onclick="alphabet_write('<br/>');">Enter</div> 
+	    </div>
+	    
+	</div> <!-- end of writing tools  div -->
 	
+	<div class="light" id="imageDiv">
+	  <h3> File upload: </h3>
+	  <input type="file" id= "inputFileToLoad" > 
 
-	<form id="letterText">
-	  <div  id="letterDiv" >Enter Text </div>
-	  <br/>
-	  <br/>
-	  <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToCanvas()" /> 
-	  <input type="button"  class="submitButton" id="deleteMessageButton" value ="Delete" onclick="deleteInputText()" /> 
+	  <p>  <input type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
+	  <h3> Folder upload: </h3>
+	  
+	  <p> <input name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
+            <!--    <label for="pripona">Filter file by file extension: </label>-->
+            <select id="pripona">
+	      <option value="jpg">jpg</option>
+              <option value="png">png</option>
+            </select>
+            <input type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
 	</form> 
 
 
 
-
-	<div class="main_panel">
-	  <!-- numerals -->
-	  <div class="number_button" onclick="keyboard_c()">&#8592;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2406;');">&#2406; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2407;');">&#2407;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2408;');"> &#2408;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2409;');">&#2409; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2410;');"> &#2410;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2411;');"> &#2411;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2412;');">&#2412; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2413;');">&#2413; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2414');">&#2414;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2415;');">&#2415;</div>
-
-
-
-	  <!-- Additions -->
-	  <div class="number_button"  id="aaa" onclick="alphabet_write('&#2381;');"> &#2381;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2366;');">&#2366;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2368;');"> &#2368;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2367;');">&#2367;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2369;');">&#2369; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2370;');">&#2370; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2375;');">&#2375; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2376;');">&#2376; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2379;');">&#2379; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2380;');">&#2380; </div>
-	  <div class="number_button"   onclick="alphabet_write('&#2306;');">&#2306; </div>
-	  <div class="number_button" onclick="alphabet_write('&#2307');">&#2307;</div>
-
-	  <!-- Akshar -->
-	  <div class="number_button"  id="aaa" onclick="alphabet_write('&#2309');">&#2309;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2311;');">&#2311;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2312;');"> &#2312;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2313;');">&#2313; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2314;');"> &#2314;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2319;');">&#2319;</div>
-	  <div class="number_button"   onclick="alphabet_write('&#2325;');">&#2325; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2326;');">&#2326; </div>
-	  <div class="number_button" onclick="alphabet_write('&#2327');">&#2327;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2328;');">&#2328;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2330;');"> &#2330;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2331;');">&#2331; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2332;');"> &#2332;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2333;');"> &#2333;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2334;');">&#2334; </div>
-
-
-	  <div class="number_button" id="aaa"   onclick="alphabet_write('&#2335;');">&#2335; </div>
-	  <div class="number_button"   onclick="alphabet_write('&#2336;');">&#2336; </div>
-	  <div class="number_button" onclick="alphabet_write('&#2337');">&#2337;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2338;');">&#2338;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2339;');">&#2339;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2340;');"> &#2340;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2341;');">&#2341; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2342;');"> &#2342;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2343;');"> &#2343;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2344;');">&#2344; </div>
-
-	  <div class="number_button"   onclick="alphabet_write('&#2346;');">&#2346; </div>
-	  <div class="number_button" onclick="alphabet_write('&#2347');">&#2347;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2348;');">&#2348;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2349;');">&#2349;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2350;');"> &#2350;</div>
-
-	  <div class="number_button" id="aaa"   onclick="alphabet_write('&#2351;');">&#2351; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2352;');"> &#2352;</div>
-
-	  <div class="number_button"  onclick="alphabet_write('&#2354;');">&#2354; </div>
-	  <div class="number_button"   onclick="alphabet_write('&#2355;');">&#2355; </div>
-
-	  <div class="number_button" onclick="alphabet_write('&#2357');">&#2357;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2358;');">&#2358;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2369;');">&#2359;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2360;');"> &#2360;</div>
-	  <div class="number_button"  onclick="alphabet_write('&#2361;');">&#2361; </div>
-	  <div class="number_button"  onclick="alphabet_write('&#2384;');">&#2384;</div>
-	  <div class="number_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
-	  <div class="number_button" id="enter"  onclick="alphabet_write('<br/>');">Enter</div> 
 	</div>
 
 
+      </div>
 
-
-      </div> <!-- end of writing tools  div -->
       <footer id="the_footer">
 	&copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
-      </footer>     
-      
+      </footer>    
     </div> <! end of big wrapper-->
+	      
+	      
+	      
 
 
 
 
 	      <script src="dropdown.js"></script> 
 	      <script src="keyboard.js"></script> 
+	      <script src="gallery.js"></script> 
+	      <script src="toolPanel.js"></script> 
 
 
 	      
