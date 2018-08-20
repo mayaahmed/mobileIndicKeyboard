@@ -49,9 +49,10 @@ function writeToMainCanvas(){
     var lines = letter.innerHTML.split('<br>');
     
     for (var i = 0; i<lines.length; i++){
+	display.append(lines[i]);
 	linebreak = document.createElement("br");
 	display.appendChild(linebreak);
-	display.append(lines[i]);
+
     }
 }
 
