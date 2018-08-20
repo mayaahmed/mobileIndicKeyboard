@@ -2,6 +2,7 @@
 var string = ""
 var letter =  document.getElementById("letterDiv");
 var canvas =  document.getElementById("letterCanvas");
+var toolsDiv = document.getElementById("writingToolsDiv");
 
 var save =document.getElementById('saveButton');
 save.addEventListener('click',saveCanvas);
@@ -62,6 +63,9 @@ function writeToCanvas(){
     for (var i = 0; i<lines.length; i++)
 	context.fillText(lines[i], x, y + (i*lineheight) );
     // context.fillText(letter.innerHTML, 10, 20);
+canvas.style.visibility ="visible";
+toolsDiv.style.visibility="hidden"
+
 }
 
 
