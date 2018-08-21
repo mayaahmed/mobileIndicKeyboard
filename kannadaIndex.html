@@ -13,11 +13,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	//	<meta charset="UTF-8" />
 		<title>Punjiri: Web and Mobile Technologies.</title>
+
+		<link rel="stylesheet" type="text/css" href="keyboard.css">
+		<link rel="stylesheet" type="text/css" href="gallery.css">
+		<link rel="stylesheet" type="text/css" href="dropdown.css">
+		<link rel="stylesheet" type="text/css" href="kannadaKeyboard.css">
         
-        <script src="general.js"></script>
-		<link rel="stylesheet" type="text/css" href="general.css">
-	    <link rel="stylesheet" type="text/css" href="kannadaKeyboard.css">
-        <link rel="stylesheet" type="text/css" href="dropdown.css">
 	</head>
 
 	<body>
@@ -29,22 +30,30 @@
                 <p id="flag"> Kannada</p>  
 			</header>
 		
-    <nav> <ul>
- <li>  <a href="menu.html" >Language</a> </li> 
-</ul> </nav>
-            
+   <nav>
+	  <ul>
+	    <li><a href="#" id="imageButton"  > Image </a> </li>
+	    <li><a href="#" id="textButton"  > Text </a> </li>
+	    <li><a href="#"  onClick="location.href='menu.html'"> Language</a> </li>
+ 	    <li><a href="#" id="clearCanvas"  onClick="location.href='kannadaIndex.html'"> New </a> </li>
+	  </ul> 
+	</nav>
 
+      </div>
 
+      
+      <div id="toolsDiv">
+	<div id="galleryContainer"> 
+	  <div id="imageContainer"> </div>
+	  <div id="textContainer"> </div>
+	</div>
 
-
-          </div>
-     
-
-<div id="letterDiv" >
-&#3221;&#3243;&#3277;&#3243;&#3233;
-</div>
-
-
+	<div id="writingToolsDiv" class="light">
+	  <form id="letterText">
+	    <div  id="letterDiv" >Enter Text </div>
+	    <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToMainCanvas()" /> 
+	     <input type="button"  class="submitButton"  value ="Clear"  onclick="deleteInputText()" /> 
+	     <input type="button"  class="submitButton"  value ="Undo"  onclick="undoText()" /> 
 
 
 
@@ -148,11 +157,41 @@
 
 </div>
 
+	</div> <!-- end of writing tools  div -->
+	
+	<div class="light" id="imageDiv">
+	  <input class="fileInput" type="button" onclick="undoImage()" value="Undo"/> </p>
+<h3> File upload: </h3>
+<input class="fileInput" type="file" id= "inputFileToLoad" > 
+
+<p>  <input class="fileInput"type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
+<h3> Folder upload: </h3>
+
+<p> <input class="fileInput" name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
+  <!--    <label for="pripona">Filter file by file extension: </label>-->
+  <select id="pripona">
+    <option value="jpg">jpg</option>
+    <option value="png">png</option>
+  </select>
+  <input class="fileInput" type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
+
+</form> 
+</div>
+
+</div>
+
+<footer id="the_footer">
+  &copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
+</footer> 
 
 
 </div> <! end of big wrapper-->
 
 
+<script src="dropdown.js"></script> 
+	  <script src="keybee.js"></script> 
+	  <script src="gallery.js"></script> 
+	  <script src="toolPanel.js"></script> 
 
 
  
