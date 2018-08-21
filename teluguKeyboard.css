@@ -18,15 +18,15 @@ flex-wrap: wrap;
 .number_button
 {
 
-width:36px;
-height:36px;
+width:35px;
+height:35px;
 margin:2px;
 background-color: khaki;
 border-radius: 2px;
 font-size: 20px;
 text-align:center;
 opacity: 0.8;
-line-height: 36px;
+line-height: 35px;
 box-shadow: inset 1px 1px 1px black;
 }
 
@@ -34,7 +34,7 @@ box-shadow: inset 1px 1px 1px black;
 .number_button:hover
 {
 opacity: 1;
-height: 37px;
+height: 34px;
 width: 37px;
 }
 
@@ -42,8 +42,8 @@ width: 37px;
 
 #spacebar{
 clear:both; 
-width: 250px;
-margin-left: 50px;
+width: 220px;
+
 }
 
 #enter{
@@ -51,27 +51,5 @@ width: 50px;
 font-size: 18px;
 }
 
-
-
-textarea{
-background:#FFFFCC;
-font-size: 24px;
-opacity: 0.8;
-box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-padding: 10px;
-}
-
-
-#letterDiv{
-min-height: 200px;
-width: 100%;
-max-width: 610px;
-background:#FFFFCC;
-font-size: 24px;
-opacity: 0.8;
-box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-padding: 10px;
-z-index: -1;
-}
 
 
