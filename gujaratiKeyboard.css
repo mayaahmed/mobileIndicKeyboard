@@ -1,6 +1,3 @@
-body{
-background: black;
-}
 
 .main_panel{
 
@@ -18,8 +15,8 @@ flex-wrap: wrap;
 .number_button
 {
 
-width:40px;
-height:40px;
+width: 36px;
+height:36px;
 margin:2px;
 background-color: khaki;
 border-radius: 2px;
@@ -34,16 +31,16 @@ box-shadow: inset 1px 1px 1px black;
 .number_button:hover
 {
 opacity: 1;
-height: 41px;
-width: 41px;
+height: 37px;
+ width: 37px;
 }
 
 
 
 #spacebar{
-clear:both; 
+// clear:both; 
 width: 250px;
-margin-left: 50px;
+
 }
 
 #enter{
@@ -51,27 +48,18 @@ width: 50px;
 font-size: 18px;
 }
 
+#letterDiv{
+min-height: 20px;
+ width: 95%;
+max-width: 610px;
 
-
-textarea{
-background:#FFFFCC;
-font-size: 24px;
-opacity: 0.8;
-box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-padding: 10px;
 }
 
 
-#letterDiv{
-min-height: 200px;
-width: 100%;
-max-width: 610px;
-background:#FFFFCC;
-font-size: 24px;
-opacity: 0.8;
-box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-padding: 10px;
-z-index: -1;
+#galleryContainer{
+width: 86%;
+ 
+
 }
 
 
