@@ -65,15 +65,15 @@ min-height: 30px;
 .number_button
 {
 
-    width:30px;
-    height:30px;
+    width:35px;
+    height:35px;
     margin:2px;
     background-color: khaki;
     border-radius: 2px;
     font-size: 22px;
     text-align:center;
     opacity: 0.8;
-    line-height: 30px;
+    line-height: 35px;
     box-shadow: inset 1px 1px 1px black;
 }
 
@@ -81,16 +81,16 @@ min-height: 30px;
 .number_button:hover
 {
     opacity: 1;
-    height: 31px;
-    width: 31px;
+    height: 36px;
+    width: 36px;
 }
 
 
 
 #spacebar{
     clear:both; 
-    width: 250px;
-    margin-left: 50px;
+    width: 220px;
+   
 }
 
 #enter{
