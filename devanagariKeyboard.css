@@ -65,15 +65,15 @@ min-height: 30px;
 .number_button
 {
 
-    width:35px;
-    height:35px;
+    width:30px;
+    height:30px;
     margin:2px;
     background-color: khaki;
     border-radius: 2px;
-    font-size: 22px;
+    font-size: 18px;
     text-align:center;
     opacity: 0.8;
-    line-height: 35px;
+    line-height: 30px;
     box-shadow: inset 1px 1px 1px black;
 }
 
@@ -81,8 +81,8 @@ min-height: 30px;
 .number_button:hover
 {
     opacity: 1;
-    height: 36px;
-    width: 36px;
+    height: 31px;
+    width: 31px;
 }
 
 
@@ -193,7 +193,7 @@ max-width: 610px;
 
 
 #galleryContainer{
-width: 80%;
+width: 70%;
  
 
 }
