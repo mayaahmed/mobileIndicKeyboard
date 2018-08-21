@@ -25,7 +25,7 @@ slideClose(imageDiv);
 function slideOpen(el){
 // el.style.transition="height 1s linear 0s";
 el.style.width="100%";
-el.style.height="800px";
+el.style.height="100%";
 el.style.visibility="visible";
 }
 

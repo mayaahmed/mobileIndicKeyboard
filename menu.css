@@ -1,21 +1,24 @@
 body{
-background: black;
+    background: black;
 }
 
 ul li {list-style:none;}
 
-li a {color: khaki; text-decoration: none; font-size: 22px;
-// text-shadow: 0px 1px 0px white;
+li a {
+    color: khaki; 
+    text-decoration: none; 
+    font-size: 22px;
+    // text-shadow: 0px 1px 0px white;
 }
-   
+
 
 li {
-position: relative;
--webkit-transition: -webkit-transform 1s linear;
+  
+    -webkit-transition: -webkit-transform 1s linear;
 }
-     
+
 li:hover{
--webkit-transform: translate(35px,0);
+    -webkit-transform: translate(35px,0);
 }
 
 
@@ -23,88 +26,36 @@ li:hover{
 
 
 #listDiv{
-
-padding: 20px;
-background: black;
-width: 200px;
-font-size: 22px;
-text-align: center;
-opacity: 0.8;
-color: khaki;
+margin-top: 20px;
+    padding: 20px;
+    background: black;
+    width: 80%;
+    font-size: 22px;
+     text-align: center;
+    opacity: 0.8;
+    color: khaki;
+border: 1px solid khaki;
 }
 
 #listDiv li{
-padding: 5px;
-}
-
-#letterDiv{
-min-height: 50px;
-width: 250px;
-background:#FFFFCC;
-font-size: 35px;
-opacity: 0.8;
-padding: 10px;
-z-index: -1;
-text-align: center;
-}
-
-.aboutclass{
-font-size: 17px;
-float: right;
+    padding: 5px;
 }
 
 
-.aboutclass:hover{
-font-size: 18px;
-opacity: 1;
-}
 
 
-.lightBorder {
- position: absolute;
-z-index: 2;
-    height: 150px;
-    width: 0px;
-    background: beige;
-  //  opacity: 0.9;
-  overflow: hidden;
-   visibility: hidden;
-font-size: 20px;
-
-}
-
-#contactDiv{
-float:right;
- 
-}
 
 
-.closeButtonOptions{
-margin: 5px;
-height: 20px;
-width: 20px;
-font-size: 18px;
-border: 1px solid black;
-background: khaki;
- border-radius: 2px;
- box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-opacity: 0.7;
-line-height: 20px;
-}
 
-.closeButtonOptions:hover{
-opacity: 0.9;
-height: 22px;
-width: 22px;
-}
+
 
 #the_footer{
-margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-size: 12px;
     padding: 10px;
-    border-top: 2px solid khaki;
-   color: khaki;
+  //  border-top: 2px solid khaki;
+    color: khaki;
     
     opacity: 0.8;
 }
@@ -112,5 +63,5 @@ margin-top: 20px;
 
 #the_footer:hover{
     font-size: 14px;
- opacity: 1;
+    opacity: 1;
 }
