@@ -15,15 +15,15 @@ flex-wrap: wrap;
 .number_button
 {
 
-width:34px;
-height:34px;
+width:36px;
+height:36px;
 margin:2px;
 background-color: khaki;
 border-radius: 2px;
 font-size: 22px;
 text-align:center;
 opacity: 0.8;
-line-height: 34px;
+line-height: 36px;
 box-shadow: inset 1px 1px 1px black;
 }
 
@@ -39,8 +39,8 @@ width: 37px;
 
 #spacebar{
 clear:both; 
-width: 250px;
-margin-left: 50px;
+width: 220px;
+
 }
 
 #enter{
