@@ -4,7 +4,7 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mayamohsinahmed.indicKeyboard"
+        id        = "com.mayamohsinahmed.keyboard"
         versioncode="1"
         version   = "1.0.0">
 
@@ -14,7 +14,7 @@
         Keyboard (Indian languages).
     </description>
 
-    <author href= "https://mayaahmed.github.io/indicKeyboard/" email="maya.ahmed@gmail.com">
+    <author href= "https://github.com/mayaahmed/mobileIndicKeyboard" email="maya.ahmed@gmail.com">
        Maya Mohsin Ahmed
     </author>
 
@@ -27,6 +27,8 @@
 <icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
 
         
-
+<platform name="android">
+    <preference name="AndroidLaunchMode" value="singleTop"/>
+    <preference name="android-minSdkVersion" value="26" />
 
  </widget>
