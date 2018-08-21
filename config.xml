@@ -14,7 +14,7 @@
         Keyboard (Indian languages).
     </description>
 
-    <author href= "https://github.com/mayaahmed/mobileIndicKeyboard" email="maya.ahmed@gmail.com">
+    <author href= "https://mayaahmed.github.io/mobileIndicKeyboard/" email="maya.ahmed@gmail.com">
        Maya Mohsin Ahmed
     </author>
 
@@ -30,5 +30,5 @@
 <platform name="android">
     <preference name="AndroidLaunchMode" value="singleTop"/>
     <preference name="android-minSdkVersion" value="26" />
-
+</platform>
  </widget>
