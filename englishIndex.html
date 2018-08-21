@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--  Programmer : Maya Ahmed 
+	Files: index.html;
+	These file contains the codes for making a Calculator.
+	Date: "Sept 12 2016" 
+	
+
+    -->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8" />
+    <title>Punjiri: Web and Mobile Technologies.</title>
+    
+    <script src="general.js"></script>
+    <link rel="stylesheet" type="text/css" href="keyboard.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="englishKeyboard.css">
+    <link rel="stylesheet" type="text/css" href="dropdown.css">
+  </head>
+
+  <body>
+
+    
+    <div id="big_wrapper">
+      
+
+      <div id="topStuff">
+        <header id="top_header">
+          <p>Keyboard</p>
+          <p id="flag"> English </p>  
+	</header>
+
+       <nav>
+	  <ul>
+	    <li><a href="#" id="imageButton"  > Image </a> </li>
+	    <li><a href="#" id="textButton"  > Text </a> </li>
+	    <li><a href="#"  onClick="location.href='menu.html'"> Language</a> </li>
+ 	    <li><a href="#" id="clearCanvas"  onClick="location.href='englishIndex.html'"> New </a> </li>
+	</ul> 
+	</nav>
+
+      </div>
+
+      <div id="toolsDiv">
+	<div id="galleryContainer"> 
+	  <div id="imageContainer"> </div>
+	  <div id="textContainer"> </div>
+	</div>
+      <div id="writingToolsDiv" class="light">
+	<form id="letterText">
+	  <textarea rows="2" cols="50" id="messageTextArea" class="input" >Enter text here with device keyboard. </textarea>
+	  <br/>
+	  <br/>
+	  <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToMainCanvas()" /> 
+	  <input type="button"  class="submitButton" id="deleteMessageButton" value ="Clear" onclick="deleteInputText()" />
+	  <input type="button"  class="submitButton"  value ="Undo"  onclick="undoText()" />  
+	</form> 
+
+      </div> <!-- end of writing tools  div -->
+
+      <div class="light" id="imageDiv">
+  <input class="fileInput" type="button" onclick="undoImage()" value="Undo"/> </p>
+	  <h3> File upload: </h3>
+	  <input class="fileInput" type="file" id= "inputFileToLoad" > 
+
+	  <p>  <input class="fileInput"type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
+	  <h3> Folder upload: </h3>
+	  
+	  <p> <input class="fileInput" name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
+            <!--    <label for="pripona">Filter file by file extension: </label>-->
+            <select id="pripona">
+	      <option value="jpg">jpg</option>
+              <option value="png">png</option>
+            </select>
+            <input class="fileInput" type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
+	</form> 
+	</div>
+
+</div>
+      <footer id="the_footer">
+	&copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
+      </footer>     
+      
+    </div> <! end of big wrapper-->
+
+
+
+
+	      <script src="dropdown.js"></script> 
+	      <script src="englishKeyboard.js"></script> 
+	      <script src="gallery.js"></script> 
+	      <script src="toolPanel.js"></script> 
+
+	      
+  </body>
+</html>

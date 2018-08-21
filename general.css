@@ -19,7 +19,7 @@ body{
 
 #big_wrapper{
     width: 100%;
- max-width: 950px;
+    max-width: 950px;
     display: -webkit-flex; 
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ body{
 	}
 
 #flag{
-font-size: 12px;
+font-size: 11px;
 }
 
 
@@ -53,6 +53,9 @@ font: 17px Ariana black;
 
 
 
+#google_translate_element{
 
+background: white;
+}
 
 

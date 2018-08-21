@@ -1,0 +1,67 @@
+body{
+    background: black;
+}
+
+ul li {list-style:none;}
+
+li a {
+    color: khaki; 
+    text-decoration: none; 
+    font-size: 22px;
+    // text-shadow: 0px 1px 0px white;
+}
+
+
+li {
+  
+    -webkit-transition: -webkit-transform 1s linear;
+}
+
+li:hover{
+    -webkit-transform: translate(35px,0);
+}
+
+
+
+
+
+#listDiv{
+margin-top: 20px;
+    padding: 20px;
+    background: black;
+    width: 80%;
+    font-size: 22px;
+     text-align: center;
+    opacity: 0.8;
+    color: khaki;
+border: 1px solid khaki;
+}
+
+#listDiv li{
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+#the_footer{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  //  border-top: 2px solid khaki;
+    color: khaki;
+    
+    opacity: 0.8;
+}
+
+
+#the_footer:hover{
+    font-size: 14px;
+    opacity: 1;
+}
