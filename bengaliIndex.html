@@ -1,169 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--  Programmer : Maya Ahmed 
-      Files: index.html;
-      These file contains the codes for making a Calculator.
-      Date: "Sept 12 2016" 
+  <!--  Programmer : Maya Ahmed 
+	Files: index.html;
+	These file contains the codes for making a Calculator.
+	Date: "Sept 12 2016" 
+	
+
+    -->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    //	<meta charset="UTF-8" />
+    <title>Punjiri: Web and Mobile Technologies.</title>
+    <link rel="stylesheet" type="text/css" href="keyboard.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="dropdown.css">
+    <link rel="stylesheet" type="text/css" href="bengaliKeyboard.css">
     
+  </head>
 
--->
+  <body>
+    <div id="big_wrapper">
+      <div id="topStuff">
+        <header id="top_header">
 
-	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	//	<meta charset="UTF-8" />
-		<title>Punjiri: Web and Mobile Technologies.</title>
-        
-        <script src="general.js"></script>
-		<link rel="stylesheet" type="text/css" href="general.css">
-	    <link rel="stylesheet" type="text/css" href="bengaliKeyboard.css">
-        <link rel="stylesheet" type="text/css" href="dropdown.css">
-	</head>
+          <p>Keyboard</p>
+          <p id="flag">Bengali</p>  
+	</header>
+	
 
-	<body>
-		<div id="big_wrapper">
-          <div id="topStuff">
-            <header id="top_header">
+	<nav>
+	  <ul>
+	    <li><a href="#" id="imageButton"  > Image </a> </li>
+	    <li><a href="#" id="textButton"  > Text </a> </li>
+	    <li><a href="#"  onClick="location.href='menu.html'"> Language</a> </li>
+ 	    <li><a href="#" id="clearCanvas"  onClick="location.href='bengaliIndex.html'"> New </a> </li>
+	  </ul> 
+	</nav>
 
-                <p>Keyboard</p>
-                <p id="flag">Bengali</p>  
-			</header>
- 
-<nav> <ul>
- <li>  <a href="menu.html" > Language</a> </li> 
-</ul> </nav>
-            
-		
+      </div>
+
+      
+      <div id="toolsDiv">
+	<div id="galleryContainer"> 
+	  <div id="imageContainer"> </div>
+	  <div id="textContainer"> </div>
+	</div>
+
+	<div id="writingToolsDiv" class="light">
+	  <form id="letterText">
+	    <div  id="letterDiv" >Enter Text </div>
+	    <input type="submit"  class="submitButton" id="submitMessageButton" value ="Submit" onclick="writeToMainCanvas()" /> 
+	    <input type="button"  class="submitButton"  value ="Clear"  onclick="deleteInputText()" /> 
+	    <input type="button"  class="submitButton"  value ="Undo"  onclick="undoText()" /> 
+
+
+
+
+
+
+
+	    <div class="main_panel">
+	      <!-- numerals -->
+	      <div class="number_button" onclick="number_c();">&#8592;</div>
+	      <div class="number_button"  onclick="alphabet_write('&#2534;');">&#2534; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2535;');">&#2535; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2536;');">&#2536; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2537;');">&#2537; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2538;');">&#2538; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2539;');">&#2539; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2540;');">&#2540; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2541;');">&#2541; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2542;');">&#2542; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2543;');">&#2543; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2546;');">&#2546; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2547;');">&#2547; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2549;');">&#2548; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2549;');">&#2549; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2550;');">&#2550; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2551;');">&#2551; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2552;');">&#2552; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2553;');">&#2553; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2554;');">&#2554; </div>
+
+
+	      <!-- Additions -->
+	      <div class="number_button"  onclick="alphabet_write('&#2433;');">&#2433; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2434;');">&#2434; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2435;');">&#2435; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2492;');">&#2492; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2494;');">&#2494; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2495;');">&#2495; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2496;');">&#2496; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2497;');">&#2497; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2498;');">&#2498; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2499;');">&#2499; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2500;');">&#2500; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2503;');">&#2503; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2504;');">&#2504; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2507;');">&#2507; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2508;');">&#2508; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2509;');">&#2509; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2519;');">&#2519; </div>
+
+
+
+
+	      <!-- Akshar -->
+	      <div class="number_button"  onclick="alphabet_write('&#2437;');">&#2437; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2438;');">&#2438; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2439;');">&#2439; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2440;');">&#2440; </div>
+
+	      <div class="number_button"  onclick="alphabet_write('&#2441;');">&#2441; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2442;');">&#2442; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2443;');">&#2443; </div>
+
+	      <div class="number_button"  onclick="alphabet_write('&#2528;');">&#2528; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2444;');">&#2444; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2529;');">&#2529; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2447;');">&#2447; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2448;');">&#2448; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2451;');">&#2451; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2452;');">&#2452; </div>
+
+
+	      <div class="number_button"  onclick="alphabet_write('&#2453;');">&#2453; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2454;');">&#2454; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2455;');">&#2455; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2456;');">&#2456; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2457;');">&#2457; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2458;');">&#2458; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2459;');">&#2459; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2460;');">&#2460; </div>
+
+
+	      <div class="number_button"  onclick="alphabet_write('&#2461;');">&#2461; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2462;');">&#2462; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2463;');">&#2463; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2464;');">&#2464; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2465;');">&#2465; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2466;');">&#2466; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2467;');">&#2467; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2468;');">&#2468; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2469;');">&#2469; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2470;');">&#2470; </div>
+
+
+
+	      <div class="number_button"  onclick="alphabet_write('&#2471;');">&#2471; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2472;');">&#2472; </div>
+
+	      <div class="number_button"  onclick="alphabet_write('&#2474;');">&#2474; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2475;');">&#2475; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2476;');">&#2476; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2477;');">&#2477; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2478;');">&#2478; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2479;');">&#2479; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2480;');">&#2480; </div>
+
+	      <div class="number_button"  onclick="alphabet_write('&#2482;');">&#2482; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2486;');">&#2486; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2487;');">&#2487; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2488;');">&#2488; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2489;');">&#2489; </div>
+
+
+	      <div class="number_button"  onclick="alphabet_write('&#2524;');">&#2524; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2525;');">&#2525; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2527;');">&#2527; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2544;');">&#2544; </div>
+	      <div class="number_button"  onclick="alphabet_write('&#2545;');">&#2545; </div>
+
+
+
+	      <div class="number_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
+	      <div class="number_button" id="enter"  onclick="alphabet_write('<br/> ');">Enter</div>
+
+
+	    </div>
+	</div> <!-- end of writing tools  div -->
+	
+	<div class="light" id="imageDiv">
+	  <input class="fileInput" type="button" onclick="undoImage()" value="Undo"/> </p>
+<h3> File upload: </h3>
+<input class="fileInput" type="file" id= "inputFileToLoad" > 
+
+<p>  <input class="fileInput"type="button" value="Upload Image" onclick="loadImageFileAsURL()"> </p>
+<h3> Folder upload: </h3>
+
+<p> <input class="fileInput" name="dir" id="dir_input" type="file" webkitdirectory directory multiple/><br/>
+  <!--    <label for="pripona">Filter file by file extension: </label>-->
+  <select id="pripona">
+    <option value="jpg">jpg</option>
+    <option value="png">png</option>
+  </select>
+  <input class="fileInput" type="button" onclick="loadDir()" value="Upload  Image Folder"/> </p>
+
+</form> 
 </div>
 
-<div id="letterDiv" >
-&#2476;&#2434;&#2482;&#2494;
-
 </div>
 
+<footer id="the_footer">
+  &copy  Punjiri Web and Mobile Technologies  2016, Mangalore, Karnataka, India.
+</footer> 
 
 
 
-
-<div class="main_panel">
-<!-- numerals -->
-<div class="number_button" onclick="number_c();">&#8592;</div>
-<div class="number_button"  onclick="alphabet_write('&#2534;');">&#2534; </div>
-<div class="number_button"  onclick="alphabet_write('&#2535;');">&#2535; </div>
-<div class="number_button"  onclick="alphabet_write('&#2536;');">&#2536; </div>
-<div class="number_button"  onclick="alphabet_write('&#2537;');">&#2537; </div>
-<div class="number_button"  onclick="alphabet_write('&#2538;');">&#2538; </div>
-<div class="number_button"  onclick="alphabet_write('&#2539;');">&#2539; </div>
-<div class="number_button"  onclick="alphabet_write('&#2540;');">&#2540; </div>
-<div class="number_button"  onclick="alphabet_write('&#2541;');">&#2541; </div>
-<div class="number_button"  onclick="alphabet_write('&#2542;');">&#2542; </div>
-<div class="number_button"  onclick="alphabet_write('&#2543;');">&#2543; </div>
-<div class="number_button"  onclick="alphabet_write('&#2546;');">&#2546; </div>
-<div class="number_button"  onclick="alphabet_write('&#2547;');">&#2547; </div>
-<div class="number_button"  onclick="alphabet_write('&#2549;');">&#2548; </div>
-<div class="number_button"  onclick="alphabet_write('&#2549;');">&#2549; </div>
-<div class="number_button"  onclick="alphabet_write('&#2550;');">&#2550; </div>
-<div class="number_button"  onclick="alphabet_write('&#2551;');">&#2551; </div>
-<div class="number_button"  onclick="alphabet_write('&#2552;');">&#2552; </div>
-<div class="number_button"  onclick="alphabet_write('&#2553;');">&#2553; </div>
-<div class="number_button"  onclick="alphabet_write('&#2554;');">&#2554; </div>
-
-
-<!-- Additions -->
-<div class="number_button"  onclick="alphabet_write('&#2433;');">&#2433; </div>
-<div class="number_button"  onclick="alphabet_write('&#2434;');">&#2434; </div>
-<div class="number_button"  onclick="alphabet_write('&#2435;');">&#2435; </div>
-<div class="number_button"  onclick="alphabet_write('&#2492;');">&#2492; </div>
-<div class="number_button"  onclick="alphabet_write('&#2494;');">&#2494; </div>
-<div class="number_button"  onclick="alphabet_write('&#2495;');">&#2495; </div>
-<div class="number_button"  onclick="alphabet_write('&#2496;');">&#2496; </div>
-<div class="number_button"  onclick="alphabet_write('&#2497;');">&#2497; </div>
-<div class="number_button"  onclick="alphabet_write('&#2498;');">&#2498; </div>
-<div class="number_button"  onclick="alphabet_write('&#2499;');">&#2499; </div>
-<div class="number_button"  onclick="alphabet_write('&#2500;');">&#2500; </div>
-<div class="number_button"  onclick="alphabet_write('&#2503;');">&#2503; </div>
-<div class="number_button"  onclick="alphabet_write('&#2504;');">&#2504; </div>
-<div class="number_button"  onclick="alphabet_write('&#2507;');">&#2507; </div>
-<div class="number_button"  onclick="alphabet_write('&#2508;');">&#2508; </div>
-<div class="number_button"  onclick="alphabet_write('&#2509;');">&#2509; </div>
-<div class="number_button"  onclick="alphabet_write('&#2519;');">&#2519; </div>
-
-
-
-
-<!-- Akshar -->
-<div class="number_button"  onclick="alphabet_write('&#2437;');">&#2437; </div>
-<div class="number_button"  onclick="alphabet_write('&#2438;');">&#2438; </div>
-<div class="number_button"  onclick="alphabet_write('&#2439;');">&#2439; </div>
-<div class="number_button"  onclick="alphabet_write('&#2440;');">&#2440; </div>
-
-<div class="number_button"  onclick="alphabet_write('&#2441;');">&#2441; </div>
-<div class="number_button"  onclick="alphabet_write('&#2442;');">&#2442; </div>
-<div class="number_button"  onclick="alphabet_write('&#2443;');">&#2443; </div>
-
-<div class="number_button"  onclick="alphabet_write('&#2528;');">&#2528; </div>
-<div class="number_button"  onclick="alphabet_write('&#2444;');">&#2444; </div>
-<div class="number_button"  onclick="alphabet_write('&#2529;');">&#2529; </div>
-<div class="number_button"  onclick="alphabet_write('&#2447;');">&#2447; </div>
-<div class="number_button"  onclick="alphabet_write('&#2448;');">&#2448; </div>
-<div class="number_button"  onclick="alphabet_write('&#2451;');">&#2451; </div>
-<div class="number_button"  onclick="alphabet_write('&#2452;');">&#2452; </div>
-
-
-<div class="number_button"  onclick="alphabet_write('&#2453;');">&#2453; </div>
-<div class="number_button"  onclick="alphabet_write('&#2454;');">&#2454; </div>
-<div class="number_button"  onclick="alphabet_write('&#2455;');">&#2455; </div>
-<div class="number_button"  onclick="alphabet_write('&#2456;');">&#2456; </div>
-<div class="number_button"  onclick="alphabet_write('&#2457;');">&#2457; </div>
-<div class="number_button"  onclick="alphabet_write('&#2458;');">&#2458; </div>
-<div class="number_button"  onclick="alphabet_write('&#2459;');">&#2459; </div>
-<div class="number_button"  onclick="alphabet_write('&#2460;');">&#2460; </div>
-
-
-<div class="number_button"  onclick="alphabet_write('&#2461;');">&#2461; </div>
-<div class="number_button"  onclick="alphabet_write('&#2462;');">&#2462; </div>
-<div class="number_button"  onclick="alphabet_write('&#2463;');">&#2463; </div>
-<div class="number_button"  onclick="alphabet_write('&#2464;');">&#2464; </div>
-<div class="number_button"  onclick="alphabet_write('&#2465;');">&#2465; </div>
-<div class="number_button"  onclick="alphabet_write('&#2466;');">&#2466; </div>
-<div class="number_button"  onclick="alphabet_write('&#2467;');">&#2467; </div>
-<div class="number_button"  onclick="alphabet_write('&#2468;');">&#2468; </div>
-<div class="number_button"  onclick="alphabet_write('&#2469;');">&#2469; </div>
-<div class="number_button"  onclick="alphabet_write('&#2470;');">&#2470; </div>
-
-
-
-<div class="number_button"  onclick="alphabet_write('&#2471;');">&#2471; </div>
-<div class="number_button"  onclick="alphabet_write('&#2472;');">&#2472; </div>
-
-<div class="number_button"  onclick="alphabet_write('&#2474;');">&#2474; </div>
-<div class="number_button"  onclick="alphabet_write('&#2475;');">&#2475; </div>
-<div class="number_button"  onclick="alphabet_write('&#2476;');">&#2476; </div>
-<div class="number_button"  onclick="alphabet_write('&#2477;');">&#2477; </div>
-<div class="number_button"  onclick="alphabet_write('&#2478;');">&#2478; </div>
-<div class="number_button"  onclick="alphabet_write('&#2479;');">&#2479; </div>
-<div class="number_button"  onclick="alphabet_write('&#2480;');">&#2480; </div>
-
-<div class="number_button"  onclick="alphabet_write('&#2482;');">&#2482; </div>
-<div class="number_button"  onclick="alphabet_write('&#2486;');">&#2486; </div>
-<div class="number_button"  onclick="alphabet_write('&#2487;');">&#2487; </div>
-<div class="number_button"  onclick="alphabet_write('&#2488;');">&#2488; </div>
-<div class="number_button"  onclick="alphabet_write('&#2489;');">&#2489; </div>
-
-
-<div class="number_button"  onclick="alphabet_write('&#2524;');">&#2524; </div>
-<div class="number_button"  onclick="alphabet_write('&#2525;');">&#2525; </div>
-<div class="number_button"  onclick="alphabet_write('&#2527;');">&#2527; </div>
-<div class="number_button"  onclick="alphabet_write('&#2544;');">&#2544; </div>
-<div class="number_button"  onclick="alphabet_write('&#2545;');">&#2545; </div>
-
-
-
-<div class="number_button" id="spacebar"  onclick="alphabet_write(' ');"></div>
-<div class="number_button" id="enter"  onclick="alphabet_write('<br/> ');">Enter</div>
-
-
-</div>
 
 
 
@@ -171,10 +216,13 @@
 
 
 
+	  <script src="dropdown.js"></script> 
+	  <script src="keyboard.js"></script> 
+	  <script src="gallery.js"></script> 
+	  <script src="toolPanel.js"></script> 
+	  
 
- 
- <script src="keyboard.js"></script> 
 
-      
+	  
 </body>
 </html>

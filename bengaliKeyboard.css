@@ -1,6 +1,3 @@
-body{
-background: black;
-}
 
 .main_panel{
 
@@ -61,7 +58,7 @@ box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 padding: 10px;
 }
 
-
+/*
 #letterDiv{
 min-height: 200px;
 width: 100%;
@@ -73,5 +70,5 @@ box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 padding: 10px;
 z-index: -1;
 }
-
+*/
 
