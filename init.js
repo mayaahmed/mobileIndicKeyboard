@@ -37,7 +37,7 @@ el.style.visibility="visible";
 }
 function initTouch() {
   document.addEventListener("touchstart", touchHandler, true);
-  document.addEventListener("touchmove", touchHandler, true);
+//  document.addEventListener("touchmove", touchHandler, true);
   document.addEventListener("touchend", touchHandler, true);
   document.addEventListener("touchcancel", touchHandler, true);   
   }
